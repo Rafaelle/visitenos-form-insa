@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import FormVisitenos from './FormVisitenos';
-import FormVisitenosBootstrap from './FormVisitenosBootstrap';
 
 
 
@@ -12,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <FormVisitenosBootstrap />
+          <FormVisitenos />
         </div>
       </div>
     )

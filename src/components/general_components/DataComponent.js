@@ -31,7 +31,7 @@ const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorNam
                     error={errorTelphone}
                     onChange={onChange}
                     onBlur={onBlur}
-                    mask={["(", "0", /\d/, /\d/, ")", " ", /\d/, /\d/, /\d/, /\d/, "-", /\d/, /\d/, /\d/, /\d/], ["(", "0", /\d/, /\d/, ")", " ", /\d/, /\d/, /\d/, /\d/, /\d/, "-", /\d/, /\d/, /\d/, /\d/]}
+                    mask={["(", "0", /\d/, /\d/, ")", " ", /\d/, /\d/, /\d/, /\d/,/\d/, "-", /\d/, /\d/, /\d/, /\d/]}
                 />
                 <TextInput
                     id={idEmail}
