@@ -160,9 +160,9 @@ const INSAForm = () => {
                 />
                 {/* Locais pretendidos para a visita */}
                 <div className="div-group">
-                    <h3>
+                    <h4 className="title-box-element">
                         OPÇÕES DE PROJETO E EXPERIMENTOS A SEREM VISITADOS
-                    </h3>
+                    </h4>
 
                     {/*Locais de visitação na sede do INSA*/}
                     <INSAComponent

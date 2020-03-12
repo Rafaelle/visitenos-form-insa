@@ -3,7 +3,7 @@ import React from 'react';
 import classnames from 'classnames';
 import InputFeedback from './InputFeedback';
 
-const ChoiseButtonGroup = ({ id, label, error, className, children, classDirectionInputgroup }) => {
+const ChoiseButtonGroup = ({ idBox, id, label, error, className, children, classDirectionInputgroup }) => {
     const classes = classnames(
         "div-group",
         {
@@ -12,8 +12,9 @@ const ChoiseButtonGroup = ({ id, label, error, className, children, classDirecti
         className
     );
     return (
-        <fieldset className={classes} >
+        <fieldset id={idBox} className={classes} >
             <legend className="title-box-element" >{label}</legend>
+            <hr/>
             <div id={id} className={classDirectionInputgroup}>
                 {children}
             </div>

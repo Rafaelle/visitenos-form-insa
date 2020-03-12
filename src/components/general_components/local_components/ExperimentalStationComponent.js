@@ -1,19 +1,23 @@
 import React from 'react';
 import ChoiseButtonGroup from '../../primary_components/ChoiseButtonGroup';
 import ChoiseButton from '../../primary_components/ChoiseButton';
+import classnames from "classnames";
 
 const ExperimentalStationComponent = ({ value, error, onChange, onBlur }) => {
+    const classes = classnames(
+        "elements-group",
+        "div-group"
+    );
 
     return (
 
         <ChoiseButtonGroup
             id="estacaoExperimental"
-            label="ESTAÇÃO EXPERIMENTAL"
+            label="Estação Experimental"
             value={value}
             error={error}
             classDirectionInputgroup="input-group-column"
         >
-
             <div id='exposicao'>
                 <h5>Exposição</h5>
                 <ChoiseButton

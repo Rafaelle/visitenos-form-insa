@@ -2,15 +2,16 @@ import React from 'react';
 import ChoiseButtonGroup from '../../primary_components/ChoiseButtonGroup';
 import ChoiseButton from '../../primary_components/ChoiseButton';
 
-const INSAComponent = ({ value, error, onChange, onBlur}) => {
+
+const INSAComponent = ({ value, error, onChange, onBlur }) => {
 
     return (
         <ChoiseButtonGroup
             id="sedeInsa"
-            label="SEDE INSA"
+            label="Sede INSA"
             value={value}
             error={error}
-            classDirectionInputgroup="input-group-column"          
+            classDirectionInputgroup="input-group-column"
         >
             <h5>Exposição</h5>
 
