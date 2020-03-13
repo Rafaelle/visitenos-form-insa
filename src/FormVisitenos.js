@@ -9,7 +9,8 @@ import INSAComponent from "./components/general_components/local_components/INSA
 import ExperimentalStationComponent from "./components/general_components/local_components/ExperimentalStationComponent";
 
 import TextInput from "./components/primary_components/TextInput";
-import TextAreaInput from "./components/primary_components/TextAreInput";
+import TextAreaInput from "./components/primary_components/TextAreaInput";
+import TextMaskedInput from "./components/primary_components/TextMaskedInput";
 
 
 const initialValues = {
@@ -138,13 +139,13 @@ const INSAForm = () => {
                         <TextInput
                             id="dataVisita"
                             type="text"
-                            label="Data da visita:"
+                            label="Data da visita:"                   
                             error={formik.touched.dataVisita && formik.errors.dataVisita}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                         />
                     </div>
-                    <TextAreaInput
+                    <TextInput
                         id="objetivoCaracteristicas"
                         type="text"
                         label="Objetivo e características da turma:"

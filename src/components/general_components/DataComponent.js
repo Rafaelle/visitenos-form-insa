@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import TelephoneInput from "../primary_components/TelephoneInput";
+import TextMaskedInput from "../primary_components/TextMaskedInput";
 import TextInput from "../primary_components/TextInput";
 
 const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorName, idTelphone, telephoneLabel, errorTelphone,valueTelephone, idEmail, emailLabel, errorEmail }) => {
@@ -23,7 +23,7 @@ const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorNam
                 onBlur={onBlur}
             />
             <div className="input-group-row">
-                <TelephoneInput
+                <TextMaskedInput
                     id={idTelphone}
                     type="text"
                     label={telephoneLabel + ":"}

@@ -5,7 +5,7 @@ import Label from './Label';
 import InputFeedback from './InputFeedback';
 
 
-const TelephoneInput = ({ type, id, label, placeholder, error, onChange, className, mask, value, onBlur }) => {
+const TextMaskedInput = ({ type, id, label, placeholder, error, onChange, className, mask, value, onBlur }) => {
     const classes = classnames(
         'input-element',
         {
@@ -32,4 +32,4 @@ const TelephoneInput = ({ type, id, label, placeholder, error, onChange, classNa
     );
 };
 
-export default TelephoneInput;
+export default TextMaskedInput;

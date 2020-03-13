@@ -4,7 +4,7 @@ import Label from './Label';
 import InputFeedback from './InputFeedback';
 
 
-const TextInput = ({ type, id, label, placeholder, error, onChange, className, onBlur }) => {
+const TextInput = ({ type, id, label, placeholder, error, onChange, className, onBlur, mask }) => {
     //Adicionar outra classe
     const classes = classnames(
         'input-element',
@@ -26,6 +26,7 @@ const TextInput = ({ type, id, label, placeholder, error, onChange, className, o
                 placeholder={placeholder}
                 onChange={onChange}
                 onBlur={onBlur}
+                mask={mask}
             />
             <InputFeedback error={error} />
         </div>
