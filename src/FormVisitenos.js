@@ -11,6 +11,7 @@ import ExperimentalStationComponent from "./components/general_components/local_
 import TextInput from "./components/primary_components/TextInput";
 import TextAreaInput from "./components/primary_components/TextAreInput";
 
+
 const initialValues = {
     nomeInstituicao: "",
     telefoneInstituicao: "",
@@ -30,6 +31,7 @@ const validationSchema = Yup.object().shape({
         .required('Por favor, digite o nome da Instituição'),
     telefoneInstituicao: Yup.string()
         .label('Telefone da instituição visitante')
+        .min(4, 'Please enter no more than 40 characters')
         .required('Por favor, digite o número do telefone com DDD'),
     emailInstituicao: Yup.string()
         .label('Nome instituição visitante')
@@ -59,7 +61,8 @@ const validationSchema = Yup.object().shape({
         .required('Por favor, escolha um horário para a visita')
 })
 
-const onSubmit = values => {
+const onSubmit = values => { 
+
     alert(JSON.stringify(values, null, 2));
 };
 
@@ -99,6 +102,7 @@ const INSAForm = () => {
                     idEmail="emailInstituicao"
                     emailLabel="E-mail da Instituição visitante"
                     errorEmail={formik.touched.emailInstituicao && formik.errors.emailInstituicao}
+                    valueTelephone = {formik.values.telefoneInstituicao}
                 />
                 {/*Dados responsável pela visita*/}
 

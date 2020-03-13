@@ -4,11 +4,6 @@ import ChoiseButton from '../../primary_components/ChoiseButton';
 import classnames from "classnames";
 
 const ExperimentalStationComponent = ({ value, error, onChange, onBlur }) => {
-    const classes = classnames(
-        "elements-group",
-        "div-group"
-    );
-
     return (
 
         <ChoiseButtonGroup

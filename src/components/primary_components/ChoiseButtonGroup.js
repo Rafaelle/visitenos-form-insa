@@ -13,7 +13,7 @@ const ChoiseButtonGroup = ({ idBox, id, label, error, className, children, class
     );
     return (
         <fieldset id={idBox} className={classes} >
-            <legend className="title-box-element" >{label}</legend>
+            <legend className="title-fieldset-element" >{label}</legend>
             <hr/>
             <div id={id} className={classDirectionInputgroup}>
                 {children}

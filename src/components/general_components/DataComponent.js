@@ -3,7 +3,7 @@ import classnames from "classnames";
 import TelephoneInput from "../primary_components/TelephoneInput";
 import TextInput from "../primary_components/TextInput";
 
-const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorName, idTelphone, telephoneLabel, errorTelphone, idEmail, emailLabel, errorEmail }) => {
+const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorName, idTelphone, telephoneLabel, errorTelphone,valueTelephone, idEmail, emailLabel, errorEmail }) => {
     const classes = classnames(
         "elements-group",
         "div-group"
@@ -11,7 +11,7 @@ const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorNam
     return (
 
         <fieldset id={id} className={classes}>
-            <legend className="title-box-element">{legend}</legend>
+            <legend className="title-fieldset-element">{legend}</legend>
 
             <TextInput
                 id={idName}
@@ -32,6 +32,7 @@ const DataComponent = ({ id,legend, onChange, onBlur, idName, nameLabel,errorNam
                     onChange={onChange}
                     onBlur={onBlur}
                     mask={["(", "0", /\d/, /\d/, ")", " ", /\d/, /\d/, /\d/, /\d/,/\d/, "-", /\d/, /\d/, /\d/, /\d/]}
+                    value = {valueTelephone}
                 />
                 <TextInput
                     id={idEmail}

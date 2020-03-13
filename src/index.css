@@ -146,11 +146,21 @@ button.outline {
 }
 
 /*legend do fieldset*/
-.title-box-element{
+.title-fieldset-element{
   width:auto;
   padding: 2px;
 }
 
+/*titulos*/
+.title-box-element{
+  width:auto;
+  padding: 10px;
+  background-color: #e6e7e8 ;
+  border-radius: 10px;
+  text-align:center;
+
+
+}
 /* div btns */
 .formBtns{
   text-align: right;
@@ -174,10 +184,11 @@ hr{
     margin: 20px 2px 20px 2px;
     padding:  10px 0px 15px 0px;       
   }
-  .title-box-element{
+  .title-fieldset-element{
     text-align:center;
     width: auto;
   }
+
 }
 
 

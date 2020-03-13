@@ -13,6 +13,7 @@ const TelephoneInput = ({ type, id, label, placeholder, error, onChange, classNa
         },
         className
     );
+
     return (
         <div className={classes}>
             <Label htmlFor={id} error={error}>
@@ -25,9 +26,7 @@ const TelephoneInput = ({ type, id, label, placeholder, error, onChange, classNa
                 placeholder={placeholder}
                 onChange={onChange}
                 mask={mask}
-                value={value}
-                onBlur={onBlur}
-            />
+                onBlur={onBlur} />
             <InputFeedback error={error} />
         </div>
     );
