@@ -1,4 +1,4 @@
-# react-pages
+# visitenos-form-insa
 Repositório para o formulário da seção de "visite nos" do portal do INSA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
