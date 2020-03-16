@@ -1,5 +1,5 @@
 # react-pages
-Repositório para testar funcionalidade do github pages + react
+Repositório para o formulário da seção de "visite nos" do portal do INSA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,4 +69,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<< HEAD
 
+=======
+>>>>>>> old_a/master
