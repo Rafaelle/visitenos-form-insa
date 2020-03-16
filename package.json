@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "formik": "^2.1.4",
-    "gh-pages": "^2.2.0",
     "imask": "^6.0.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -38,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
