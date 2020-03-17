@@ -1,6 +1,9 @@
 {
   "files": {
+<<<<<<< 8eaa76883d3f887bfdf0d640246643ea452a426d
 <<<<<<< 8e507d49be28921351ab5d334443a25150148918
+=======
+>>>>>>> Updates
     "main.css": "/visitenos-form-insa/static/css/main.c2fa0864.chunk.css",
     "main.js": "/visitenos-form-insa/static/js/main.a1cd4a26.chunk.js",
     "main.js.map": "/visitenos-form-insa/static/js/main.a1cd4a26.chunk.js.map",
@@ -13,6 +16,7 @@
     "service-worker.js": "/visitenos-form-insa/service-worker.js",
     "static/css/main.c2fa0864.chunk.css.map": "/visitenos-form-insa/static/css/main.c2fa0864.chunk.css.map",
     "static/js/2.24e8534d.chunk.js.LICENSE.txt": "/visitenos-form-insa/static/js/2.24e8534d.chunk.js.LICENSE.txt"
+<<<<<<< 8eaa76883d3f887bfdf0d640246643ea452a426d
   },
   "entrypoints": [
     "static/js/runtime-main.b17c4994.js",
@@ -39,6 +43,14 @@
     "static/js/2.6434cd51.chunk.js",
     "static/css/main.5f361e03.chunk.css",
     "static/js/main.09c9a7dc.chunk.js"
+>>>>>>> Updates
+=======
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b17c4994.js",
+    "static/js/2.24e8534d.chunk.js",
+    "static/css/main.c2fa0864.chunk.css",
+    "static/js/main.a1cd4a26.chunk.js"
 >>>>>>> Updates
   ]
 }
