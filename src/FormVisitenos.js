@@ -7,11 +7,11 @@ import DataComponent from "./components/general_components/DataComponent";
 import TimeComponent from "./components/general_components/TimeComponent";
 import INSAComponent from "./components/general_components/local_components/INSAComponent";
 import ExperimentalStationComponent from "./components/general_components/local_components/ExperimentalStationComponent";
-
+/*import {
+    isMobile
+} from "react-device-detect";
+*/
 import TextInput from "./components/primary_components/TextInput";
-import TextAreaInput from "./components/primary_components/TextAreaInput";
-import TextMaskedInput from "./components/primary_components/TextMaskedInput";
-
 
 const initialValues = {
     nomeInstituicao: "",
@@ -62,7 +62,7 @@ const validationSchema = Yup.object().shape({
         .required('Por favor, escolha um horário para a visita')
 })
 
-const onSubmit = values => { 
+const onSubmit = values => {
 
     alert(JSON.stringify(values, null, 2));
 };
@@ -74,8 +74,13 @@ const INSAForm = () => {
         onSubmit
     });
 
+    /*if (isMobile) {
+        return <div> This content is unavailable on mobile</div>
+    }*/
+
     return (
-        <div className="container" >
+
+        <div className="container form-body" >
             {/*
             <h1>Formulário de Agendamento de Visita</h1>
             <hr />
@@ -105,7 +110,7 @@ const INSAForm = () => {
                     idEmail="emailInstituicao"
                     emailLabel="E-mail da Instituição visitante"
                     errorEmail={formik.touched.emailInstituicao && formik.errors.emailInstituicao}
-                    valueTelephone = {formik.values.telefoneInstituicao}
+                    valueTelephone={formik.values.telefoneInstituicao}
                 />
                 {/*Dados responsável pela visita*/}
 
@@ -141,7 +146,7 @@ const INSAForm = () => {
                         <TextInput
                             id="dataVisita"
                             type="text"
-                            label="Data da visita:"                   
+                            label="Data da visita:"
                             error={formik.touched.dataVisita && formik.errors.dataVisita}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}

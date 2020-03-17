@@ -1,7 +1,6 @@
 import React from 'react';
 import ChoiseButtonGroup from '../../primary_components/ChoiseButtonGroup';
 import ChoiseButton from '../../primary_components/ChoiseButton';
-import classnames from "classnames";
 
 const ExperimentalStationComponent = ({ value, error, onChange, onBlur }) => {
     return (
