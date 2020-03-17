@@ -76,6 +76,7 @@ const INSAForm = () => {
 
     return (
         <div className="container" >
+            {/*
             <h1>Formulário de Agendamento de Visita</h1>
             <hr />
             <p>
@@ -87,6 +88,7 @@ const INSAForm = () => {
                 <li>Como sugestão para melhor aproveitamento em termos de logistica, separe um turno (manhã ou tarde) para casa local de experimento. Por exemplo: Sede do INSA (manhã); Estação Experimental (tarde).</li>
                 <li>Usar proteção solar (chapéu, protetor solar, roupas confortáveis), trazer garrafinhas com água.</li>
             </ul>
+            */}
             <form onSubmit={formik.handleSubmit}>
                 {/*Dados instituição*/}
                 <DataComponent
