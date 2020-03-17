@@ -14,15 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-<<<<<<< 8eaa76883d3f887bfdf0d640246643ea452a426d
-<<<<<<< 8e507d49be28921351ab5d334443a25150148918
-  "/visitenos-form-insa/precache-manifest.1c1c368a56bdae6ce1b6e9422031df8f.js"
-=======
-  "/react-pages/precache-manifest.69e9c035659910e04993387d1c71b452.js"
->>>>>>> Updates
-=======
-  "/visitenos-form-insa/precache-manifest.1c1c368a56bdae6ce1b6e9422031df8f.js"
->>>>>>> Updates
+  "/visitenos-form-insa/precache-manifest.4c933e241c45d9813e57f49dbce62bcf.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -41,15 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-<<<<<<< 8eaa76883d3f887bfdf0d640246643ea452a426d
-<<<<<<< 8e507d49be28921351ab5d334443a25150148918
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/visitenos-form-insa/index.html"), {
-=======
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/react-pages/index.html"), {
->>>>>>> Updates
-=======
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/visitenos-form-insa/index.html"), {
->>>>>>> Updates
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
